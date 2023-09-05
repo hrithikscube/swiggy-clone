@@ -8,17 +8,17 @@ const Home = () => {
     return (
         <div className='lg:w-[1290px] m-auto flex flex-col'>
 
-            <div className='my-5'>
+            <div className='my-5 relative'>
                 <SubHeading title="Best offers for you" />
                 <OfferCarousel />
             </div>
             
-            <div className='my-5'>
+            <div className='my-5 relative'>
                 <SubHeading title="What's on your mind?" />
                 <CategoryCarousel />
             </div>
 
-            <div className='my-5'>
+            <div className='my-5 relative'>
                 <SubHeading title="Top restaurant chains in Bangalore" />
                 <RestaurantCarousel />
             </div>

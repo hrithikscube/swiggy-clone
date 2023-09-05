@@ -2,13 +2,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import { foodcategories } from "@/utils/helpers";
+import ButtonGroup from "./common/ButtonGroup";
 
 
 const CategoryCarousel = () => {
     return (
         <Carousel
             additionalTransfrom={0}
-            arrows
+            arrows={false}
             autoPlaySpeed={3000}
             centerMode={false}
             className=""
@@ -23,7 +24,8 @@ const CategoryCarousel = () => {
             partialVisible
             pauseOnHover
             renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
+            renderButtonGroupOutside={true}
+            customButtonGroup={<ButtonGroup />}
             renderDotsOutside={false}
             responsive={{
                 desktop: {
