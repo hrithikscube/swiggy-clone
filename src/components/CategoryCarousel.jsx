@@ -1,9 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
-import { offerCardItems } from "@/utils/helpers";
+import { foodcategories } from "@/utils/helpers";
 
-const OfferCarousel = () => {
+
+const CategoryCarousel = () => {
     return (
         <Carousel
             additionalTransfrom={0}
@@ -30,8 +31,8 @@ const OfferCarousel = () => {
                         max: 3000,
                         min: 1024
                     },
-                    items: 2.5,
-                    partialVisibilityGutter: 30
+                    items: 5.5,
+                    partialVisibilityGutter: 40
                 },
                 mobile: {
                     breakpoint: {
@@ -59,9 +60,9 @@ const OfferCarousel = () => {
             slidesToSlide={1}
             swipeable
         >
-            {React.Children.toArray(offerCardItems.map(item => (
-                <div className="mr-7">
-                    <img src={item} alt="banner_card" />
+            {React.Children.toArray(foodcategories.map(item => (
+                <div className=" mr-4">
+                    <img src={item.image} alt="food_category_card" />
                 </div>
             )))}
         </Carousel>
@@ -69,4 +70,4 @@ const OfferCarousel = () => {
 }
 
 
-export default OfferCarousel
+export default CategoryCarousel

@@ -93,3 +93,168 @@ export const offerCardItems = [
     "/offers/offer2.webp",
     "/offers/offer3.webp",
 ]
+
+export const foodcategories = [
+    {
+        image: `/categories/biryani.png`,
+        link: '#'
+    },
+    {
+        image: '/categories/burger.png',
+        link: '#'
+    },
+    {
+        image: '/categories/cakes.png',
+        link: '#'
+    },
+    {
+        image: '/categories/chinese.png',
+        link: '#'
+    },
+    {
+        image: '/categories/chole.png',
+        link: '#'
+    },
+    {
+        image: '/categories/desserts.png',
+        link: '#'
+    },
+    {
+        image: '/categories/dosa.png',
+        link: '#'
+    },
+    {
+        image: '/categories/icecream.png',
+        link: '#'
+    },
+    {
+        image: '/categories/idli.png',
+        link: '#'
+    },
+
+    {
+        image: '/categories/khichdi.png',
+        link: '#'
+    },
+    {
+        image: '/categories/noodles.png',
+        link: '#'
+    },
+    {
+        image: '/categories/northindian.png',
+        link: '#'
+    },
+    {
+        image: '/categories/paratha.png',
+        link: '#'
+    },
+    {
+        image: '/categories/pasta.png',
+        link: '#'
+    },
+    {
+        image: '/categories/pizza.png',
+        link: '#'
+    },
+    {
+        image: '/categories/pureveg.png',
+        link: '#'
+    },
+    {
+        image: '/categories/rolls.png',
+        link: '#'
+    },
+    {
+        image: '/categories/salad.png',
+        link: '#'
+    },
+    {
+        image: '/categories/shakes.png',
+        link: '#'
+    },
+    {
+        image: '/categories/southindian.png',
+        link: '#'
+    },
+]
+
+export const popularRestaurants = [
+    {
+        name: `Bakingo`,
+        rating: '4.2',
+        image:'/restaurants/bakingo.webp',
+        description: 'Bakery, Desserts, Beverages, Snacks',
+        location: 'Marathalli'
+    },
+    {
+        name: `Andhra Gunpowder`,
+        rating: '4.3',
+        image:'/restaurants/gunpowder.webp',
+        description: 'Andhra Biryani, South Indian',
+        location: 'C V Raman Nagar'
+    },
+    {
+        name: `Leon's - Burgers & Wings`,
+        rating: '4.3',
+        image:'/restaurants/gunpowder.webp',
+        description: 'Andhra Biryani, South Indian',
+        location: 'C V Raman Nagar'
+    },
+    {
+        name: `Nandhana Palace`,
+        rating: '4',
+        image:'/restaurants/nandhana.webp',
+        description: 'Andhra Biryani, South Indian',
+        location: 'Kr Puram'
+    },
+    {
+        name: `KFC`,
+        rating: '4',
+        image:'/restaurants/nandhana.webp',
+        description: 'Burgers, Biryani, American Snacks',
+        location: 'Whitefield'
+    },
+    {
+        name: `Burger King`,
+        rating: '4',
+        image:'/restaurants/burgerking.webp',
+        description: 'Burgers, American',
+        location: 'Kr Puram'
+    },
+    {
+        name: `McDonald's`,
+        rating: '4.1',
+        image:'/restaurants/mcdonalds.webp',
+        description: 'Burgers, Beverages, Cafe, Desserts',
+        location: 'Kr Puram'
+    },
+    {
+        name: `Domino's Pizza`,
+        rating: '4.4',
+        image:'/restaurants/dominos.webp',
+        description: 'Pizza, Italian, Pastas, Desserts',
+        location: 'Whitefield'
+    },
+    {
+        name: `EatFit`,
+        rating: '4.2',
+        image:'/restaurants/eatfit.webp',
+        description: 'Chinese, Healthy Food, Tandoor',
+        location: 'Whitefield'
+    },
+    {
+        name: `Lavonne`,
+        rating: '4.2',
+        image:'/restaurants/lavonne.webp',
+        description: 'Bakery, Desserts',
+        location: 'Whitefield'
+    },
+    {
+        name: `Truffles`,
+        rating: '4.2',
+        image:'/restaurants/truffles.webp',
+        description: 'American, Continental, Desserts',
+        location: 'Kr Puram'
+    },
+    
+]
