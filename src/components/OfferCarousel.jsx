@@ -49,7 +49,7 @@ const OfferCarousel = () => {
                         max: 3000,
                         min: 1024
                     },
-                    items: 3,
+                    items: 2.5,
                     partialVisibilityGutter: 40
                 },
                 mobile: {
@@ -79,7 +79,7 @@ const OfferCarousel = () => {
             swipeable
         >
             {React.Children.toArray(offerCardItems.map(item => (
-                <div className="ml-7">
+                <div className="mr-7">
                     <img src={item} alt="banner_card" />
                 </div>
             )))}
