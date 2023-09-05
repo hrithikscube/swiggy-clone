@@ -63,7 +63,7 @@ const RestaurantCarousel = () => {
             swipeable
         >
             {React.Children.toArray(popularRestaurants.map(item => (
-                <div className="mr-4 hover:scale-[0.9] transition-all cursor-pointer">
+                <div className="mr-4 lg:hover:scale-[0.9] transition-all cursor-pointer">
                     <img src={item.image} alt="food_category_card" className="h-[170px] object-cover w-[290px] rounded-[12px]" />
                     <div className="flex flex-col mt-2">
                         <p className="text-lg font-poppins font-medium  text-footerDark">{item.name}</p>
