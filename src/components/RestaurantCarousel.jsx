@@ -1,8 +1,8 @@
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import React from "react";
-import { foodcategories, popularRestaurants } from "@/utils/helpers";
 import ButtonGroup from "./common/ButtonGroup";
+import { popularRestaurants } from "@/utils/helpers";
 
 
 const RestaurantCarousel = () => {
@@ -64,7 +64,7 @@ const RestaurantCarousel = () => {
         >
             {React.Children.toArray(popularRestaurants.map(item => (
                 <div className="mr-4">
-                    <img src={item.image} alt="food_category_card" className="h-[200px] object-cover w-[290px] rounded-[12px]" />
+                    <img src={item.image} alt="food_category_card" className="h-[180px] object-cover w-[290px] rounded-[12px]" />
 
                     <div className="flex flex-col mt-2">
                         <p className="text-lg font-poppins font-medium  text-footerDark">{item.name}</p>

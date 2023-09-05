@@ -1,8 +1,8 @@
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import React from "react";
-import { foodcategories } from "@/utils/helpers";
 import ButtonGroup from "./common/ButtonGroup";
+import { foodcategories } from "@/utils/helpers";
 
 
 const CategoryCarousel = () => {
