@@ -17,45 +17,21 @@ const Footer = () => {
 
                     <div className='flex lg:flex-row flex-col lg:items-center items-start gap-5 w-full lg:mt-0 mt-5'>
 
-                        {/* Playstore Button */}
-                        <div className='w-[220px]'>
-                            <CtaButton>
-                                <div className='flex justify-start items-center gap-2'>
-                                    <Image
-                                        src="/icons/playstore.svg"
-                                        alt="playstore"
-                                        width={30}
-                                        height={30} />
+                        <Image
+                            className='cursor-pointer'
+                            src="/images/play_store.png"
+                            alt="playstore"
+                            width={220}
+                            height={100}
+                        />
 
-                                    <div className='flex flex-col items-start'>
-                                        <p className='text-white uppercase font-poppins text-sm tracking-wide'>get it on</p>
-                                        <p className='text-white capitalize lg:text-xl text-lg'>google play</p>
-                                    </div>
-
-                                </div>
-                            </CtaButton>
-
-                        </div>
-
-                        {/* Apple Button */}
-                        <div className='w-[220px]'>
-                            <CtaButton>
-                                <div className='flex justify-start items-center gap-2'>
-                                    <Image
-                                        src="/icons/apple.svg"
-                                        alt="apple"
-                                        width={40}
-                                        height={40} />
-
-                                    <div className='flex flex-col items-start'>
-                                        <p className='text-white uppercase font-poppins text-sm tracking-wide'>download on the</p>
-                                        <p className='text-white capitalize lg:text-xl text-lg'>App Store</p>
-                                    </div>
-
-                                </div>
-                            </CtaButton>
-
-                        </div>
+                        <Image
+                            className='cursor-pointer'
+                            src="/images/app_store.png"
+                            alt="app_store"
+                            width={220}
+                            height={100}
+                        />
 
                     </div>
 

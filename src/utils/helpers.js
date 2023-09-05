@@ -84,3 +84,12 @@ export const cities = [
     },
 
 ]
+
+export const offerCardItems = [
+    "/offers/offer1.webp",
+    "/offers/offer2.webp",
+    "/offers/offer3.webp",
+    "/offers/offer4.webp",
+    "/offers/offer5.webp",
+    "/offers/offer6.webp",
+]
