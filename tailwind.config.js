@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         footerDark: '#02060C',
         secondaryGrey: '#94a3b8',
-        swiggyOrange: '#F15700'
+        swiggyOrange: '#F15700',
+        orangeLight: '#fc8019'
       }
     },
   },

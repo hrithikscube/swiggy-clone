@@ -1,7 +1,6 @@
 import { cities, companyItems, contactItems, legalItems } from '@/utils/helpers'
 import Image from 'next/image'
 import React, { Fragment } from 'react'
-import CtaButton from './CtaButton'
 
 const Footer = () => {
     return (
