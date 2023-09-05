@@ -41,7 +41,7 @@ const CategoryCarousel = () => {
                         max: 464,
                         min: 0
                     },
-                    items: 1,
+                    items: 1.5,
                     partialVisibilityGutter: 30
                 },
                 tablet: {

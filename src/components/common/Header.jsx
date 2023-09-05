@@ -10,7 +10,7 @@ const Header = () => {
                 <div className='flex items-center lg:gap-10'>
                     <img src="/icons/swiggyLogo.svg" alt="swiggyLogo" className='h-12 w-12 hover:scale-[1.1] transition-all cursor-pointer' />
 
-                    <div className='flex flex-row items-start gap-2 group cursor-pointer'>
+                    <div className='lg:flex hidden flex-row items-start gap-2 group cursor-pointer'>
                         <p className='text-sm group-hover:text-swiggyOrange text-footerDark font-poppins font-medium tracking-wide border-b-2 border-footerDark group-hover:border-swiggyOrange'>Whitefield</p>
                         <p className='font-poppins text-sm text-[#808080] group-hover:opacity-50 font-medium tracking-wide'>Bengaluru, Karnataka, India</p>
                     </div>

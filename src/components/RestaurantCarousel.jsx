@@ -42,7 +42,7 @@ const RestaurantCarousel = () => {
                         min: 0
                     },
                     items: 1,
-                    partialVisibilityGutter: 30
+                    partialVisibilityGutter: 20
                 },
                 tablet: {
                     breakpoint: {
@@ -74,7 +74,6 @@ const RestaurantCarousel = () => {
                         <p className="text-sm text-[#808080] font-poppins font-regular">{item.description}</p>
                         <p className="text-sm text-[#808080] font-poppins font-regular">{item.location}</p>
                     </div>
-
                 </div>
             )))}
         </Carousel>

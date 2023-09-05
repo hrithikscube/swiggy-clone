@@ -10,7 +10,7 @@ const RightArrow = () => {
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     const { carouselState: { currentSlide } } = rest;
     return (
-        <div className="flex gap-3 items-center">
+        <div className="lg:flex hidden gap-3 items-center">
             <button
                 className='bg-gray-200 rounded-full p-2 -rotate-180 absolute -top-1 right-10 shadow'
                 onClick={() => previous()}>

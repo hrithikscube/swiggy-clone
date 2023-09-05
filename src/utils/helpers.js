@@ -187,6 +187,55 @@ export const popularRestaurants = [
         location: 'Marathalli'
     },
     {
+        name: `Bowl Company`,
+        rating: '4.7',
+        image:'/restaurants/bowlcompany.webp',
+        description: 'Ricebowl, North Indian, Tandoori, Chinese',
+        location: 'Marathalli'
+    },
+    {
+        name: `FreshMenu`,
+        rating: '4.3',
+        image:'/restaurants/freshmenu.webp',
+        description: 'American, Salads, Burger',
+        location: 'Marathalli'
+    },
+    {
+        name: `Kanthi Sweets`,
+        rating: '4.2',
+        image:'/restaurants/kanti.webp',
+        description: 'Sweets, Desserts, Icecream',
+        location: 'Marathalli'
+    },
+    {
+        name: `Meghana Foods`,
+        rating: '4.5',
+        image:'/restaurants/meghana.webp',
+        description: 'Andhra Biryani, South Indian',
+        location: 'Whitefield'
+    },
+    {
+        name: `Pizza Hut`,
+        rating: '4.1',
+        image:'/restaurants/pizzahut.webp',
+        description: 'Pizza, Italian',
+        location: 'Whitefield'
+    },
+    {
+        name: `Thalessery Restaurant`,
+        rating: '4.8',
+        image:'/restaurants/thalessery.webp',
+        description: 'South Indian, Biryani, Sea Food',
+        location: 'Whitefield'
+    },
+    {
+        name: `Wendy's`,
+        rating: '4.2',
+        image:'/restaurants/wendys.webp',
+        description: 'Burgers, American',
+        location: 'MG Road'
+    },
+    {
         name: `Andhra Gunpowder`,
         rating: '4.3',
         image:'/restaurants/gunpowder.webp',
@@ -196,7 +245,7 @@ export const popularRestaurants = [
     {
         name: `Leon's - Burgers & Wings`,
         rating: '4.3',
-        image:'/restaurants/gunpowder.webp',
+        image:'/restaurants/leongrill.webp',
         description: 'Andhra Biryani, South Indian',
         location: 'C V Raman Nagar'
     },
@@ -210,7 +259,7 @@ export const popularRestaurants = [
     {
         name: `KFC`,
         rating: '4',
-        image:'/restaurants/nandhana.webp',
+        image:'/restaurants/kfc.webp',
         description: 'Burgers, Biryani, American Snacks',
         location: 'Whitefield'
     },
