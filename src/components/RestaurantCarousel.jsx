@@ -1,0 +1,84 @@
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import React from "react";
+import { foodcategories, popularRestaurants } from "@/utils/helpers";
+
+
+const RestaurantCarousel = () => {
+    return (
+        <Carousel
+            additionalTransfrom={0}
+            arrows
+            autoPlaySpeed={3000}
+            centerMode={false}
+            className=""
+            containerClass="container"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            partialVisible
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={{
+                desktop: {
+                    breakpoint: {
+                        max: 3000,
+                        min: 1024
+                    },
+                    items: 3.5,
+                    partialVisibilityGutter: 40
+                },
+                mobile: {
+                    breakpoint: {
+                        max: 464,
+                        min: 0
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30
+                },
+                tablet: {
+                    breakpoint: {
+                        max: 1024,
+                        min: 464
+                    },
+                    items: 2,
+                    partialVisibilityGutter: 30
+                }
+            }}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+        >
+            {React.Children.toArray(popularRestaurants.map(item => (
+                <div className="mr-4">
+                    <img src={item.image} alt="food_category_card" className="h-[200px] object-cover w-[290px] rounded-[12px]" />
+
+                    <div className="flex flex-col mt-2">
+                        <p className="text-lg font-poppins font-medium  text-footerDark">{item.name}</p>
+                        <div className="flex items-center gap-2">
+                            <img src="/icons/rating.svg" alt="rating" className="w-5 h-5" />
+                            <p className="text-base text-[#292929] font-poppins font-regular">{item.rating}</p>
+                        </div>
+                        <p className="text-sm text-[#808080] font-poppins font-regular">{item.description}</p>
+                        <p className="text-sm text-[#808080] font-poppins font-regular">{item.location}</p>
+                    </div>
+
+                </div>
+            )))}
+        </Carousel>
+    )
+}
+
+
+export default RestaurantCarousel
