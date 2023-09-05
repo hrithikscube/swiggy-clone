@@ -62,7 +62,7 @@ const OfferCarousel = () => {
             swipeable
         >
             {React.Children.toArray(offerCardItems.map(item => (
-                <div className="mr-7">
+                <div className="mr-7 cursor-pointer">
                     <img src={item} alt="banner_card" />
                 </div>
             )))}
