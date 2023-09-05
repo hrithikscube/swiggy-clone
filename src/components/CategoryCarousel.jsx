@@ -63,8 +63,8 @@ const CategoryCarousel = () => {
             swipeable
         >
             {React.Children.toArray(foodcategories.map(item => (
-                <div className=" mr-4">
-                    <img src={item.image} alt="food_category_card" />
+                <div className="">
+                    <img src={item.image} alt="food_category_card" className="w-[144px] h-[180px]" />
                 </div>
             )))}
         </Carousel>
