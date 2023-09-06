@@ -5,7 +5,7 @@ import Header from '@/components/common/Header'
 
 const index = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Header />
       <Home />
       <Footer />
