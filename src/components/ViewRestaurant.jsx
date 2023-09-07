@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Header from './common/Header'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Breadcrumb = ({ crumbs }) => {
     return (
@@ -29,7 +30,11 @@ const OfferCard = () => {
 }
 
 
-const ViewRestaurant = ({ name }) => {
+const ViewRestaurant = () => {
+
+    const { query } = useRouter()
+
+    console.log(query.slug, 'slug')
 
     const crumbs = [
         {
@@ -43,7 +48,7 @@ const ViewRestaurant = ({ name }) => {
         },
 
         {
-            name: name,
+            name: query.slug,
             link: '#'
         },
     ]
