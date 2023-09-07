@@ -7,6 +7,15 @@ import { popularRestaurants } from '@/utils/helpers'
 import React from 'react'
 
 
+const FilterCta = (props) => {
+    return (
+        <button className='p-2 rounded-full px-3 border text-footerDark bg-white shadow capitalize'>
+            {props.children}
+        </button>
+    )
+}
+
+
 const Home = () => {
     return (
         <div className='lg:w-[1290px] m-auto flex flex-col lg:px-0 px-5 overflow-hidden'>
@@ -23,6 +32,43 @@ const Home = () => {
 
             <div className='my-5 relative overflow-x-hidden'>
                 <SubHeading title="Top restaurant chains in Bangalore" />
+
+                <div className='my-5 flex lg:flex-row flex-col items-center gap-4'>
+
+                    <FilterCta>
+                        <div className='flex items-center gap-2 justify-center'>
+                            <p className='text-sm capitalize font-poppins'>Filter</p>
+                            <img src="/icons/filter.svg" alt="filterIcon" className='w-5 h-5' />
+                        </div>
+                    </FilterCta>
+
+                    <FilterCta>
+                        <div className='flex items-center gap-2 justify-center'>
+                            <p className='text-sm capitalize font-poppins'>Sort By</p>
+                            <img src="/icons/dropdown.svg" alt="dropdownIcon" className='w-5 h-5' />
+                        </div>
+                    </FilterCta>
+
+                    {
+                        React.Children.toArray([
+                            "Fast Deliver",
+                            "New on Swiggy",
+                            "Ratings 4.0+",
+                            "Pure Veg",
+                            "Offers",
+                            "Rs. 300 - Rs.600",
+                            "Less than 300"
+                        ].map(item => (
+                            <FilterCta>
+                                <div className='flex items-center gap-2 justify-center'>
+                                    <p className='text-sm capitalize font-poppins'>{item}</p>
+                                </div>
+                            </FilterCta>
+                        )))
+                    }
+
+                </div>
+
                 <RestaurantCarousel />
             </div>
 
