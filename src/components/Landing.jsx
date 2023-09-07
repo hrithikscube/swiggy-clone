@@ -84,7 +84,8 @@ const Landing = () => {
         {/* features  */}
         <div className="w-full bg-[#2B1E16] lg:p-10 p-5">
           <div className="flex lg:flex-row flex-col items-center lg:justify-around -mt-10">
-            {[
+            {
+             React.Children.toArray( [
               {
                 name: 'no minimum order',
                 description:
@@ -116,7 +117,8 @@ const Landing = () => {
                   {item.description}
                 </p>
               </div>
-            ))}
+            )))
+            }
           </div>
         </div>
 
