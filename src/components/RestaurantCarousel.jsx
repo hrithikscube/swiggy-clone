@@ -64,7 +64,19 @@ const RestaurantCarousel = () => {
     >
       {React.Children.toArray(
         popularRestaurants.map((item) => (
-          <Link href={'/home/view/' + item.name}>
+          <Link
+            // href={'/home/view/' + item.name}
+            href={{
+              pathname: '/home/view/' + item.name,
+              query: {
+                id: item.id,
+                name: item.name,
+                description: item.description,
+                rating: item.rating,
+                location: item.location,
+              },
+            }}
+          >
             <div className="mr-4 lg:hover:scale-[0.9] transition-all cursor-pointer">
               <img
                 src={item.image}
