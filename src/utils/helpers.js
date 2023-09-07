@@ -86,12 +86,30 @@ export const cities = [
 ]
 
 export const offerCardItems = [
-    "/offers/offer4.webp",
-    "/offers/offer5.webp",
-    "/offers/offer6.webp",
-    "/offers/offer1.webp",
-    "/offers/offer2.webp",
-    "/offers/offer3.webp",
+    {
+        name:"banner4",
+        image:"/offers/offer4.webp",
+    },
+    {
+        name:"banner5",
+        image:"/offers/offer5.webp",
+    },
+    {
+        name:"banner6",
+        image:"/offers/offer6.webp",
+    },
+    {
+        name:"banner1",
+        image:"/offers/offer1.webp",
+    },
+    {
+        name:"banner2",
+        image:"/offers/offer2.webp",
+    },
+    {
+        name:"banner3",
+        image:"/offers/offer3.webp",
+    },
 ]
 
 export const foodcategories = [

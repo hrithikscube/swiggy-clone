@@ -49,7 +49,7 @@ const Footer = () => {
                             <p className='font-poppins font-medium text-white lg:text-2xl text-xl'>Swiggy</p>
                         </div>
 
-                        <p className='font-poppins text-secondaryGrey text-base capitaliza mt-2'>&copy; 2023 Bundl Technologies Pvt. Ltd</p>
+                        <p className='font-poppins text-gray-400 text-base capitaliza mt-2'>&copy; 2023 Bundl Technologies Pvt. Ltd</p>
 
                     </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
                         <h1 className='font-medium text-white font-poppins lg:text-xl text-lg'>Company</h1>
 
                         {React.Children.toArray(companyItems.map((item) => (
-                            <p className='cursor-pointer capitalize text-base text-secondaryGrey font-thin font-poppins'>{item.name}</p>
+                            <p className='cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins'>{item.name}</p>
                         )))}
                     </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
                             <h1 className='font-medium text-white font-poppins lg:text-xl text-lg'>Contact us</h1>
 
                             {React.Children.toArray(contactItems.map((item) => (
-                                <p className='cursor-pointer capitalize text-base text-secondaryGrey font-thin font-poppins'>{item.name}</p>
+                                <p className='cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins'>{item.name}</p>
                             )))}
                         </div>
 
@@ -79,7 +79,7 @@ const Footer = () => {
                             <h1 className='font-medium text-white font-poppins lg:text-xl text-lg'>Legal</h1>
 
                             {React.Children.toArray(legalItems.map((item) => (
-                                <p className='cursor-pointer capitalize text-base text-secondaryGrey font-thin font-poppins'>{item.name}</p>
+                                <p className='cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins'>{item.name}</p>
                             )))}
                         </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
                         <h1 className='font-medium text-white font-poppins lg:text-xl text-lg'>We deliver to</h1>
 
                         {React.Children.toArray(cities.map((item) => (
-                            <p className='cursor-pointer capitalize text-base text-secondaryGrey font-thin font-poppins'>{item.name}</p>
+                            <p className='cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins'>{item.name}</p>
                         )))}
                     </div>
 
