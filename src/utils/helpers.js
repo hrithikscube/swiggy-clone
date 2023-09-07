@@ -180,126 +180,126 @@ export const foodcategories = [
 
 export const popularRestaurants = [
     {
-        name: `Bakingo`,
+        name: 'Bakingo',
         rating: '4.2',
         image:'/restaurants/bakingo.webp',
         description: 'Bakery, Desserts, Beverages, Snacks',
         location: 'Marathalli'
     },
     {
-        name: `Bowl Company`,
+        name: 'Bowl Company',
         rating: '4.7',
         image:'/restaurants/bowlcompany.webp',
         description: 'Ricebowl, North Indian, Tandoori, Chinese',
         location: 'Marathalli'
     },
     {
-        name: `FreshMenu`,
+        name: 'FreshMenu',
         rating: '4.3',
         image:'/restaurants/freshmenu.webp',
         description: 'American, Salads, Burger',
         location: 'Marathalli'
     },
     {
-        name: `Kanthi Sweets`,
+        name: 'Kanthi Sweets',
         rating: '4.2',
         image:'/restaurants/kanti.webp',
         description: 'Sweets, Desserts, Icecream',
         location: 'Marathalli'
     },
     {
-        name: `Meghana Foods`,
+        name: 'Meghana Foods',
         rating: '4.5',
         image:'/restaurants/meghana.webp',
         description: 'Andhra Biryani, South Indian',
         location: 'Whitefield'
     },
     {
-        name: `Pizza Hut`,
+        name: 'Pizza Hut',
         rating: '4.1',
         image:'/restaurants/pizzahut.webp',
         description: 'Pizza, Italian',
         location: 'Whitefield'
     },
     {
-        name: `Thalessery Restaurant`,
+        name: 'Thalessery Restaurant',
         rating: '4.8',
         image:'/restaurants/thalessery.webp',
         description: 'South Indian, Biryani, Sea Food',
         location: 'Whitefield'
     },
     {
-        name: `Wendy's`,
+        name: 'Wendys',
         rating: '4.2',
         image:'/restaurants/wendys.webp',
         description: 'Burgers, American',
         location: 'MG Road'
     },
     {
-        name: `Andhra Gunpowder`,
+        name: 'Andhra Gunpowder',
         rating: '4.3',
         image:'/restaurants/gunpowder.webp',
         description: 'Andhra Biryani, South Indian',
         location: 'C V Raman Nagar'
     },
     {
-        name: `Leon's - Burgers & Wings`,
+        name: 'Leons - Burgers & Wings',
         rating: '4.3',
         image:'/restaurants/leongrill.webp',
         description: 'Andhra Biryani, South Indian',
         location: 'C V Raman Nagar'
     },
     {
-        name: `Nandhana Palace`,
+        name: 'Nandhana Palace',
         rating: '4',
         image:'/restaurants/nandhana.webp',
         description: 'Andhra Biryani, South Indian',
         location: 'Kr Puram'
     },
     {
-        name: `KFC`,
+        name: 'KFC',
         rating: '4',
         image:'/restaurants/kfc.webp',
         description: 'Burgers, Biryani, American Snacks',
         location: 'Whitefield'
     },
     {
-        name: `Burger King`,
+        name: 'Burger King',
         rating: '4',
         image:'/restaurants/burgerking.webp',
         description: 'Burgers, American',
         location: 'Kr Puram'
     },
     {
-        name: `McDonald's`,
+        name: 'McDonalds',
         rating: '4.1',
         image:'/restaurants/mcdonalds.webp',
         description: 'Burgers, Beverages, Cafe, Desserts',
         location: 'Kr Puram'
     },
     {
-        name: `Domino's Pizza`,
+        name: 'Dominos Pizza',
         rating: '4.4',
         image:'/restaurants/dominos.webp',
         description: 'Pizza, Italian, Pastas, Desserts',
         location: 'Whitefield'
     },
     {
-        name: `EatFit`,
+        name: 'EatFit',
         rating: '4.2',
         image:'/restaurants/eatfit.webp',
         description: 'Chinese, Healthy Food, Tandoor',
         location: 'Whitefield'
     },
     {
-        name: `Lavonne`,
+        name: 'Lavonne',
         rating: '4.2',
         image:'/restaurants/lavonne.webp',
         description: 'Bakery, Desserts',
         location: 'Whitefield'
     },
     {
-        name: `Truffles`,
+        name: 'Truffles',
         rating: '4.2',
         image:'/restaurants/truffles.webp',
         description: 'American, Continental, Desserts',
