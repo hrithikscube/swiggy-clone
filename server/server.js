@@ -5,6 +5,7 @@ const authenticate = require("./middleware/authenticate");
 const resturant = require("./controllers/restaurant");
 const category = require("./controllers/category")
 const menu = require("./controllers/menu")
+const order = require("./controllers/order")
 const app = express();
 
 app.use(express.json());
@@ -22,7 +23,14 @@ app.get("/category/:restaurantId", authenticate, category.getCategoriesByRestaur
 
 //menu
 app.post("/menu", authenticate, menu.createItem);
+app.get("/menu/:categoryId/:restaurantId", authenticate, menu.getMenusByCategoryAndRestaurant);
+app.get("/menu", authenticate, menu.listAllItems);
+app.get("/menu/:name", authenticate, menu.searchItemsByName);
 
+
+//order
+app.post("/order", authenticate, order.createOrder);
+app.get("/orders/restaurant", authenticate, order.getOrdersForUserRestaurant);
 
 //user
 app.post("/users", userController.createUser);

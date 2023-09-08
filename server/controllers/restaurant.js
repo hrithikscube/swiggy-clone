@@ -6,7 +6,7 @@ const createResturant = async (req, res) => {
   try {
     const { name, address, phone, rating, image } = req.body;
 
-    console.log(req.body);
+    console.log(req.user);
 
     const rules = {
       name: "required",

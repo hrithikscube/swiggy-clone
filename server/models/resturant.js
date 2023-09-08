@@ -1,30 +1,39 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-// Define a schema for the restaurant
 const restaurantSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: false,
+    required: true,
   },
   address: {
-    type: String,
-    required: false,
+    street: {
+      type: String,
+      required: true,
+    },
+    city: {
+      type: String,
+      required: true,
+    },
+    state: {
+      type: String,
+      required: true,
+    },
+    postalCode: {
+      type: String,
+      required: true,
+    },
   },
   rating: {
     type: Number,
-    required: false,
+    min: 0,
+    max: 5,
+    default: 0,
   },
-  phone: {
-    type: String,
-    required: false,
-  },
-  image: {
-    type: String,
-    required: false,
-  },
+  phone: String,
+
+  image: String,
 });
 
-// Create a Mongoose model based on the schema
-const Restaurant = mongoose.model('Restaurant', restaurantSchema);
+const Restaurant = mongoose.model("Restaurant", restaurantSchema);
 
 module.exports = Restaurant;
