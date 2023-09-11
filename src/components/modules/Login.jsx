@@ -10,6 +10,8 @@ const Login = () => {
         password: ''
     })
 
+    console.log(params, 'params')
+
     const handleChange = (e) => {
         let { name, value } = e.target
 
@@ -34,7 +36,7 @@ const Login = () => {
 
                 <Logo />
 
-                <p className='text-footerDark text-center text-sm font-poppins font-semibold my-2'>Log in with store owner credentials</p>
+                <p className='text-footerDark text-center text-sm font-poppins font-semibold my-2'>Log in with store</p>
 
                 <InputBox
                     name={"email"}
