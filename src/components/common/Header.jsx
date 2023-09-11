@@ -22,6 +22,15 @@ const LoginForm = () => {
                     Login
                 </CtaButton>
             </div>
+
+            <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
+
+                Click <Link href="/dashboard">
+                    <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
+                </Link>
+            </p>
+
+
         </div>
     )
 }
