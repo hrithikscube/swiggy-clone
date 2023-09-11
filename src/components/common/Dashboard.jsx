@@ -1,23 +1,29 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import SideMenu from './SideMenu'
 import RenderModule from './RenderModule'
+import { Avatar } from '@mui/material'
 
 const Dashboard = ({ module }) => {
 
     return (
-        <div className='flex flex-row items-start w-full'>
+        <Fragment>
 
-            {/* Sidebar menu */}
             
-            <SideMenu />
 
-            {/* Render Component based on folder based route */}
+            <div className='flex flex-row items-start w-full'>
 
-            <RenderModule>
-                {module}
-            </RenderModule>
+                {/* Sidebar menu */}
 
-        </div>
+                <SideMenu />
+
+                {/* Render Component based on folder based route */}
+
+                <RenderModule>
+                    {module}
+                </RenderModule>
+
+            </div>
+        </Fragment>
     )
 }
 
