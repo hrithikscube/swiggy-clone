@@ -16,6 +16,10 @@ const menuItems = [
         name: 'Restaurants',
         link: '/dashboard/restaurants'
     },
+    {
+        name: 'Logout',
+        link: '/dashboard/logout'
+    },
 
 ]
 

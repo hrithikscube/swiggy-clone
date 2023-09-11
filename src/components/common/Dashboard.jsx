@@ -8,8 +8,6 @@ const Dashboard = ({ module }) => {
     return (
         <Fragment>
 
-            
-
             <div className='flex flex-row items-start w-full'>
 
                 {/* Sidebar menu */}
