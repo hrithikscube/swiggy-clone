@@ -1,11 +1,11 @@
 import React from 'react'
+import Stats from '@/components/common/Stats'
 import Dashboard from '@/components/common/Dashboard'
-
 
 
 const index = () => {
     return (
-        <Dashboard module={<h1>Main dashboard page</h1>} />
+        <Dashboard module={<Stats />} />
     )
 }
 

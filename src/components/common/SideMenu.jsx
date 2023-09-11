@@ -9,6 +9,10 @@ const menuItems = [
         link: '/dashboard/owners'
     },
     {
+        name: 'Dashboard',
+        link: '/dashboard'
+    },
+    {
         name: 'Restaurants',
         link: '/dashboard/restaurants'
     },
@@ -22,7 +26,7 @@ const inActiveStyle = 'text-footerDark hover:text-swiggyOrange'
 const SideMenu = () => {
     const { route } = useRouter()
     return (
-        <div className='w-2/12 py-5 bg-none h-screen shadow'>
+        <div className='w-2/12 py-5 bg-none h-screen border-r'>
             <div className='px-5'>
                 <Logo />
             </div>
