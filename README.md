@@ -37,3 +37,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # swiggy-clone
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/088574db-b0ed-4355-9f74-22b369290cdf/deploy-status)](https://app.netlify.com/sites/swiggy-clone-webapp/deploys)

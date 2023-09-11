@@ -1,11 +1,11 @@
 import React from 'react'
-import Stats from '@/components/modules/Stats'
+import Logout from '@/components/modules/Logout'
 import Dashboard from '@/components/common/Dashboard'
 
 
 const index = () => {
     return (
-        <Dashboard module={<Stats />} />
+        <Dashboard module={<Logout />} />
     )
 }
 

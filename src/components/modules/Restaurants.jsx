@@ -1,8 +1,13 @@
 import React from 'react'
+import Title from '../common/Title'
 
 const Restaurants = () => {
   return (
-    <div>Restaurants</div>
+    <div>
+      <div className='bg-[#f2f2f2] rounded-lg p-4 w-full'>
+        <Title heading="List of Restaurants" />
+      </div>
+    </div>
   )
 }
 
