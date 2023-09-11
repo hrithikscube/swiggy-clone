@@ -42,10 +42,6 @@ const OfferCard = () => {
 const ViewRestaurant = () => {
   const { query } = useRouter()
 
-  console.log(query.slug, 'slug')
-
-  console.log(query, 'query')
-
   const crumbs = [
     {
       name: 'Home /',
