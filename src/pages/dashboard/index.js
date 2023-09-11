@@ -1,5 +1,5 @@
 import React from 'react'
-import Stats from '@/components/common/Stats'
+import Stats from '@/components/modules/Stats'
 import Dashboard from '@/components/common/Dashboard'
 
 
