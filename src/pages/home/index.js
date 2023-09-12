@@ -32,7 +32,7 @@ const Home = () => {
         <SubHeading title="Top restaurant chains in Bangalore" />
 
         <div className="my-5 flex items-start">
-          <div className=" grid lg:grid-cols-9 grid-cols-2  gap-4">
+          <div className="grid lg:grid-cols-8 grid-cols-2 gap-4">
             <FilterCta>
               <div className="flex items-center gap-2 justify-center">
                 <p className="text-sm capitalize font-poppins">Filter</p>
