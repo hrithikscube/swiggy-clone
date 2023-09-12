@@ -92,7 +92,7 @@ const Login = () => {
                         <div className='flex flex-col w-full gap-4 justify-start items-start'>
                             <Logo link="#" />
 
-                            <p className='text-footerDark text-center text-sm font-poppins font-medium my-2'>Don't have an account?
+                            <p className='text-footerDark text-center text-sm font-poppins font-medium my-2'>Don&apos;t have an account?
                                 <span className='cursor-pointer text-[#808080]' onClick={toggleHandler}> Sign up here</span>
                             </p>
 
