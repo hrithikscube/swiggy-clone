@@ -8,7 +8,7 @@ const SECRET_KEY = "girishv";
 // Create a new user and save it to the database
 const createUser = async (req, res) => {
   try {
-    const { name, password, phone, email } = req.body;
+    const { name, password, phone, email ,restaurants} = req.body;
 
     const existingUser = await User.findOne({ $or: [{ email }, { phone }] });
 
@@ -42,6 +42,7 @@ const createUser = async (req, res) => {
       password: hashedPassword,
       phone,
       email,
+      restaurants
     });
 
     await newUser.save();
