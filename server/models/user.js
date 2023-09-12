@@ -17,6 +17,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  // Add a reference to the restaurants owned by the user
+  restaurants: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Restaurant", // Reference to the Restaurant model
+    },
+  ],
 });
 
 const User = mongoose.model("User", userSchema);
