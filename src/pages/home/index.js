@@ -32,7 +32,7 @@ const Home = () => {
         <SubHeading title="Top restaurant chains in Bangalore" />
 
         <div className="my-5 flex items-start">
-          <div className=" grid lg:grid-cols-9 grid-cols-2  gap-4">
+          <div className="grid lg:grid-cols-8 grid-cols-2 gap-4">
             <FilterCta>
               <div className="flex items-center gap-2 justify-center">
                 <p className="text-sm capitalize font-poppins">Filter</p>
@@ -80,10 +80,10 @@ const Home = () => {
 
       <hr className="border-gray-300" />
 
-      <div className="my-5">
+      <div className="my-5 lg:justify-start flex flex-col lg:items-start justify-center items-center">
         <SubHeading title="Restaurants with online food delivery in Bangalore" />
 
-        <div className="grid lg:grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 grid-cols-1 items-center justify-start gap-5 w-full">
           {React.Children.toArray(
             popularRestaurants.map((item) => (
               <Link
