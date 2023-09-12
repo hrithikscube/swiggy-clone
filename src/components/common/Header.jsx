@@ -20,8 +20,6 @@ const LoginForm = () => {
         password: ''
     })
 
-    console.log(loginParams, 'loginParams')
-
     const handleLoginParmas = (e) => {
         let { name, value } = e.target
         setLoginParams({ ...loginParams, [name]: value })
@@ -34,8 +32,6 @@ const LoginForm = () => {
         password: '',
         confirm_password: ''
     })
-
-    console.log(params, 'params')
 
     const handleParams = (e) => {
         let { name, value } = e.target
@@ -255,8 +251,6 @@ const Header = () => {
     ]
 
     const [signin, setsignin] = useState(false)
-
-    console.log(signin, 'signin')
 
     const signinOpen = () => {
         setsignin(true)
