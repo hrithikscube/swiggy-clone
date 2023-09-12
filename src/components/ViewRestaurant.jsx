@@ -81,16 +81,16 @@ const MenuItem = ({ data }) => {
       </div>
 
       <div className="relative">
-        <img src="/restaurants/mcdonalds.webp" alt="mcdonalds" className="md:w-[160px] w-full lg:h-[120px] h-[150px] object-cover rounded-lg" />
+        <img src="/restaurants/mcdonalds.webp" alt="mcdonalds" className="md:w-[160px] w-full lg:h-[110px] h-[150px] object-cover rounded-lg" />
 
         <div className='flex items-center -mt-5 justify-center'>
           <button className='bg-white shadow border rounded w-[70px] py-1 font-poppins text-sm font-medium text-[#21973B]  px-5 uppercase hover:text-swiggyOrange flex items-center justify-center'>
             {count === 0 ?
               <span onClick={incr}>Add</span> :
               <div className='flex items-center justify-between gap-2'>
-                <span onClick={decr} className='font-poppins text-sm font-medium text-[#808080]'>-</span>
-                <span className='font-poppins text-sm font-medium text-[#21973B]'>{count}</span>
-                <span onClick={incr} className='font-poppins text-sm font-medium text-[#21973B]'>+</span>
+                <span onClick={decr} className='font-poppins text-sm font-semibold text-[#808080]'>-</span>
+                <span className='font-poppins text-sm font-semibold text-[#21973B]'>{count}</span>
+                <span onClick={incr} className='font-poppins text-sm font-semibold text-[#21973B]'>+</span>
               </div>
             }
           </button>
@@ -122,7 +122,7 @@ const ViewRestaurant = () => {
     },
   ]
 
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
 
   const myToggler = () => {
     setShow(!show)
@@ -211,6 +211,15 @@ const ViewRestaurant = () => {
         </div>
 
 
+      </div>
+
+      <div className='flex items-center justify-center'>
+        <button className='p-2 bg-[#5D8ED5] rounded-full fixed bottom-5'>
+          <div className='flex items-center-2 gap-2'>
+            <img src="/icons/spoon.svg" alt="spoon" className='w-5 h-5 invert' />
+            <p className='uppercase text-white font-poppins text-sm font-medium'>Browse menu</p>
+          </div>
+        </button>
       </div>
 
     </Fragment>
