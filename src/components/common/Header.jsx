@@ -3,6 +3,7 @@ import SidebarDrawer from './SideDrawer';
 import React, { Fragment, useState } from 'react'
 import InputBox from './Inputbox';
 import CtaButton from './CtaButton';
+import { IconButton } from '@mui/material';
 
 
 
@@ -195,7 +196,7 @@ const LoginForm = () => {
     )
 }
 
-const DetecLocation = () => {
+const DetectLocation = () => {
     return (
         <div className='p-10'>
 
@@ -307,6 +308,12 @@ const Header = () => {
 
                     </div>
 
+                    <div className="lg:hidden block">
+                        <IconButton>
+                            <img src="/icons/burgerMenu.svg" alt="burger_menu" className="w-7 h-7 cursor-pointer" />
+                        </IconButton>
+                    </div>
+
                 </div>
             </div>
 
@@ -321,7 +328,7 @@ const Header = () => {
                 anchor="left"
                 open={locationDrawer}
                 handleClose={locationDrawerClose}
-                renderComponent={<DetecLocation />}
+                renderComponent={<DetectLocation />}
             />
 
         </Fragment>
