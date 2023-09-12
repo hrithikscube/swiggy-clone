@@ -80,10 +80,10 @@ const Home = () => {
 
       <hr className="border-gray-300" />
 
-      <div className="my-5">
+      <div className="my-5 lg:justify-start flex flex-col lg:items-start justify-center items-center">
         <SubHeading title="Restaurants with online food delivery in Bangalore" />
 
-        <div className="grid lg:grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 grid-cols-1 items-center justify-start gap-5 w-full">
           {React.Children.toArray(
             popularRestaurants.map((item) => (
               <Link

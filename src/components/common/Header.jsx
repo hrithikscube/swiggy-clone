@@ -95,7 +95,7 @@ const LoginForm = () => {
 
                         <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
 
-                            Click <Link href="/dashboard">
+                            Click <Link href="/dashboard/login">
                                 <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
                             </Link>
                         </p>
@@ -183,7 +183,7 @@ const LoginForm = () => {
 
                         <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
 
-                            Click <Link href="/dashboard">
+                            Click <Link href="/dashboard/login">
                                 <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
                             </Link>
                         </p>
