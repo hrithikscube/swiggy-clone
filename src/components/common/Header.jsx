@@ -4,34 +4,194 @@ import React, { Fragment, useState } from 'react'
 import InputBox from './Inputbox';
 import CtaButton from './CtaButton';
 
+
+
 const LoginForm = () => {
+
+    const [isReg, setIsReg] = useState(false)
+
+    const toggleFunction = () => {
+        setIsReg(!isReg)
+    }
+
+    const [loginParams, setLoginParams] = useState({
+        phone_or_email: '',
+        password: ''
+    })
+
+    console.log(loginParams, 'loginParams')
+
+    const handleLoginParmas = (e) => {
+        let { name, value } = e.target
+        setLoginParams({ ...loginParams, [name]: value })
+    }
+
+    const [params, setParams] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        password: '',
+        confirm_password: ''
+    })
+
+    console.log(params, 'params')
+
+    const handleParams = (e) => {
+        let { name, value } = e.target
+        setParams({ ...params, [name]: value })
+    }
+
+    const [show, setShow] = useState(false)
+
+
     return (
-        <div className='p-10'>
-            <h1 className='lg:text-3xl text-2xl font-poppins font-medium text-footerDark tracking-wide'>Login</h1>
+        <>
+            {
+                !isReg ?
+                    <div className='p-10'>
+                        <h1 className='lg:text-3xl text-2xl font-poppins font-medium text-footerDark tracking-wide'>Login</h1>
 
-            <p className='text-sm font-poppins text-gray-400 mt-2'>or
-                <span className='text-sm font-poppins text-swiggyOrange cursor-pointer'> create an account</span></p>
+                        <p className='text-sm font-poppins text-gray-400 mt-2'>or
+                            <span className='text-sm font-poppins text-swiggyOrange cursor-pointer' onClick={toggleFunction}> create an account</span></p>
 
-            <div className='w-7 border-b border-footerDark' />
+                        <div className='w-7 border-b border-footerDark' />
 
-            <div className="w-full flex flex-col gap-4 mt-5">
+                        <div className="w-full flex flex-col gap-4 mt-5">
 
-                <InputBox name="name" label="Enter Username" styles="w-full" />
-
-                <CtaButton>
-                    Login
-                </CtaButton>
-            </div>
-
-            <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
-
-                Click <Link href="/dashboard">
-                    <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
-                </Link>
-            </p>
+                            <InputBox
+                                name="phone_or_email"
+                                label="Phone or Email"
+                                styles="w-full"
+                                value={loginParams.phone_or_email}
+                                onChange={handleLoginParmas}
+                            />
 
 
-        </div>
+                            <div className='relative w-full'>
+                                <InputBox
+                                    name={"password"}
+                                    label={"Enter Password"}
+                                    styles={'w-full'}
+                                    type={!show ? 'password' : 'text'}
+                                    value={loginParams.password}
+                                    onChange={handleLoginParmas}
+                                />
+
+                                <div onClick={() => setShow(!show)} className='absolute top-5 right-5 cursor-pointer'>
+                                    {
+                                        !show ?
+                                            <img src="/icons/eyeOpen.svg" alt="eyeOpen" className='w-5 h-5' /> :
+                                            <img src="/icons/eyeClose.svg" alt="eyeClose" className='w-5 h-5' />
+                                    }
+                                </div>
+
+                            </div>
+
+
+                            <CtaButton>
+                                Login
+                            </CtaButton>
+                        </div>
+
+                        <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
+
+                            Click <Link href="/dashboard">
+                                <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
+                            </Link>
+                        </p>
+
+                    </div> :
+                    <div className='p-10'>
+                        <h1 className='lg:text-3xl text-2xl font-poppins font-medium text-footerDark tracking-wide'>Register User</h1>
+
+                        <p className='text-sm font-poppins text-gray-400 mt-2'>or already a user?
+                            <span className='text-sm font-poppins text-swiggyOrange cursor-pointer' onClick={toggleFunction}> Click here</span></p>
+
+                        <div className='w-7 border-b border-footerDark' />
+
+                        <div className="w-full flex flex-col gap-4 mt-5">
+
+                            <InputBox
+                                name="name"
+                                label="Name"
+                                styles="w-full"
+                                value={params.name}
+                                onChange={handleParams}
+                            />
+
+                            <InputBox
+                                name="phone"
+                                label="Phone"
+                                styles="w-full"
+                                value={params.phone}
+                                onChange={handleParams}
+                            />
+
+                            <InputBox
+                                name="email"
+                                label="Email"
+                                styles="w-full"
+                                value={params.email}
+                                onChange={handleParams}
+                            />
+
+
+                            <div className='relative w-full'>
+                                <InputBox
+                                    name={"password"}
+                                    label={"Password"}
+                                    styles={'w-full'}
+                                    type={!show ? 'password' : 'text'}
+                                    value={params.password}
+                                    onChange={handleParams}
+                                />
+
+                                <div onClick={() => setShow(!show)} className='absolute top-5 right-5 cursor-pointer'>
+                                    {
+                                        !show ?
+                                            <img src="/icons/eyeOpen.svg" alt="eyeOpen" className='w-5 h-5' /> :
+                                            <img src="/icons/eyeClose.svg" alt="eyeClose" className='w-5 h-5' />
+                                    }
+                                </div>
+
+                            </div>
+
+                            <div className='relative w-full'>
+                                <InputBox
+                                    name={"confirm_password"}
+                                    label={"Confirm Password"}
+                                    styles={'w-full'}
+                                    type={!show ? 'password' : 'text'}
+                                    value={params.confirm_password}
+                                    onChange={handleParams}
+                                />
+
+                                <div onClick={() => setShow(!show)} className='absolute top-5 right-5 cursor-pointer'>
+                                    {
+                                        !show ?
+                                            <img src="/icons/eyeOpen.svg" alt="eyeOpen" className='w-5 h-5' /> :
+                                            <img src="/icons/eyeClose.svg" alt="eyeClose" className='w-5 h-5' />
+                                    }
+                                </div>
+
+                            </div>
+
+                            <CtaButton>
+                                Register
+                            </CtaButton>
+                        </div>
+
+                        <p className='text-sm font-poppins text-footerDark mt-2'>If your a registered store owner.
+
+                            Click <Link href="/dashboard">
+                                <span className='text-sm font-poppins text-swiggyOrange cursor-pointer hover:underline'>here</span>
+                            </Link>
+                        </p>
+
+
+                    </div>
+            }
+        </>
     )
 }
 
