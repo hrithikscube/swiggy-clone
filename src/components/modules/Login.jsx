@@ -24,9 +24,10 @@ const Login = () => {
         }
     }
 
+    const [show, setShow] = useState(false)
 
     return (
-        <div className='h-screen flex flex-row items-start'>
+        <div className='h-screen flex flex-row items-center'>
 
             <div className='lg:w-7/12 lg:block hidden'>
                 <img src="https://picsum.photos/1440/800?grayscale" alt="" className='lg:block hidden h-screen w-full object-cover' />
@@ -36,7 +37,7 @@ const Login = () => {
 
                 <Logo />
 
-                <p className='text-footerDark text-center text-sm font-poppins font-semibold my-2'>Log in with store</p>
+                <p className='text-footerDark text-center text-sm font-poppins font-semibold my-2'>Log in as store owner</p>
 
                 <InputBox
                     name={"email"}
@@ -46,14 +47,25 @@ const Login = () => {
                     styles={'w-full'}
                 />
 
-                <InputBox
-                    name={"password"}
-                    label={"Enter Password"}
-                    onChange={handleChange}
-                    value={params.password}
-                    styles={'w-full'}
-                    type="password"
-                />
+                <div className='relative w-full'>
+                    <InputBox
+                        name={"password"}
+                        label={"Enter Password"}
+                        onChange={handleChange}
+                        value={params.password}
+                        styles={'w-full'}
+                        type={!show ? 'password' : 'text'}
+                    />
+
+                    <div onClick={() => setShow(!show)} className='absolute top-5 right-5 cursor-pointer'>
+                        {
+                            !show ?
+                                <img src="/icons/eyeOpen.svg" alt="eyeOpen" className='w-5 h-5' /> :
+                                <img src="/icons/eyeClose.svg" alt="eyeClose" className='w-5 h-5' />
+                        }
+                    </div>
+
+                </div>
 
                 <CtaButton>
                     Login
