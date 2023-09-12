@@ -145,10 +145,10 @@ const ViewRestaurant = () => {
 
         <div className=''>
 
-          <div className='flex items-center justify-between'>
-            <h1 className='font-poppins font-medium lg:text-lg text-base'>Burgers & Burger Combos (23)</h1>
+          <div onClick={myToggler} className='flex items-center justify-between cursor-pointer'>
+            <h1 className='font-poppins font-medium lg:text-lg text-base pointer-events-none'>Burgers & Burger Combos (23)</h1>
 
-            <div onClick={myToggler}>
+            <div >
               {
                 !show ?
                   <img src="/icons/dropdown.svg" alt="dropdownIcon" className='w-5 h-5 cursor-pointer' /> :
@@ -158,7 +158,19 @@ const ViewRestaurant = () => {
 
           </div>
 
-          <FoodType type="veg" />
+          <div className="flex items-center justify-between">
+
+            <div className="lg:w-8/12 w-full">
+              <FoodType type="veg" />
+              <h1 className="font-poppins lg:text-base text-footerDark font-medium">Grilled Lamb Burger Combo</h1>
+              <p className="text-sm font-poppins font-medium">Rs. 460</p>
+              <p className="text-sm font-poppins font-thin">Save 14% with this combo of grilled lamb burger combo, our signature grilled lamb burger patty topped with crunchy lettuce, cheese, and onions served with garlic mayo on a toasted burger bun served with 2pc of peri peri chicken wings, along with fries & 250 ml beverage.</p>
+            </div>
+
+            <div className="relative">
+              <img src="/restaurants/mcdonalds.webp" alt="mcdonalds" className="w-[200px] h-[150px] object-cover rounded-lg" />
+            </div>
+          </div>
 
 
         </div>
