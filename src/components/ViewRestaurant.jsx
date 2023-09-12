@@ -41,21 +41,65 @@ const OfferCard = () => {
 const FoodType = ({ type }) => {
 
   return (
-    <>
+    <div className=''>
       {
         type === 'veg' ?
-          <div className='w-5 h-5 border-2 border-green-600 flex items-center justify-center'>
-            <div className='w-3 h-3 rounded-full bg-green-600' />
+          <div className='w-4 h-4 border-2 border-green-600 flex items-center justify-center'>
+            <div className='w-2 h-2 rounded-full bg-green-600' />
           </div> :
-          <div className='w-5 h-5 border-2 border-red-600 flex items-center justify-center'>
-            <div className='w-3 h-3 rounded-full bg-red-600' />
+          <div className='w-4 h-4 border-2 border-red-600 flex items-center justify-center'>
+            <div className='w-2 h-2 rounded-full bg-red-600' />
           </div>
       }
 
 
-    </>
+    </div>
   )
 
+}
+
+const MenuItem = ({ data }) => {
+
+  const [count, setCount] = useState(0)
+
+  const incr = () => {
+    setCount(count + 1)
+  }
+  const decr = () => {
+    setCount(count - 1)
+  }
+
+  return (
+    <div className="flex md:flex-row flex-col-reverse lg:items-start lg:justify-between mt-2">
+
+      <div className="lg:w-8/12 w-full flex flex-col justify-between">
+        <FoodType type="veg" />
+        <h1 className="font-poppins lg:text-base text-[#2f2f2f] font-medium">Grilled Lamb Burger Combo</h1>
+        <p className="text-sm font-poppins font-thin text-[#2f2f2f]">Rs. 460</p>
+
+        <p className="text-xs font-poppins font-thin text-[#808080] mt-2">Save 14% with this combo of grilled lamb burger combo, our signature grilled lamb burger patty topped with crunchy lettuce, cheese, and onions served with garlic mayo on a toasted burger bun served with 2pc of peri peri chicken wings, along with fries & 250 ml beverage.</p>
+      </div>
+
+      <div className="relative">
+        <img src="/restaurants/mcdonalds.webp" alt="mcdonalds" className="md:w-[160px] w-full lg:h-[120px] h-[150px] object-cover rounded-lg" />
+
+        <div className='flex items-center -mt-5 justify-center'>
+          <button className='bg-white shadow border rounded w-[70px] py-1 font-poppins text-sm font-medium text-[#21973B]  px-5 uppercase hover:text-swiggyOrange flex items-center justify-center'>
+            {count === 0 ?
+              <span onClick={incr}>Add</span> :
+              <div className='flex items-center justify-between gap-2'>
+                <span onClick={decr} className='font-poppins text-sm font-medium text-[#808080]'>-</span>
+                <span className='font-poppins text-sm font-medium text-[#21973B]'>{count}</span>
+                <span onClick={incr} className='font-poppins text-sm font-medium text-[#21973B]'>+</span>
+              </div>
+            }
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  )
 }
 
 const ViewRestaurant = () => {
@@ -144,7 +188,6 @@ const ViewRestaurant = () => {
         <hr className="my-5 border-b-1 border-gray-300" />
 
         <div className=''>
-
           <div onClick={myToggler} className='flex items-center justify-between cursor-pointer'>
             <h1 className='font-poppins font-medium lg:text-lg text-base pointer-events-none'>Burgers & Burger Combos (23)</h1>
 
@@ -157,26 +200,15 @@ const ViewRestaurant = () => {
             </div>
 
           </div>
-
-          <div className="flex items-center justify-between">
-
-            <div className="lg:w-8/12 w-full">
-              <FoodType type="veg" />
-              <h1 className="font-poppins lg:text-base text-footerDark font-medium">Grilled Lamb Burger Combo</h1>
-              <p className="text-sm font-poppins font-medium">Rs. 460</p>
-              <p className="text-sm font-poppins font-thin">Save 14% with this combo of grilled lamb burger combo, our signature grilled lamb burger patty topped with crunchy lettuce, cheese, and onions served with garlic mayo on a toasted burger bun served with 2pc of peri peri chicken wings, along with fries & 250 ml beverage.</p>
-            </div>
-
-            <div className="relative">
-              <img src="/restaurants/mcdonalds.webp" alt="mcdonalds" className="w-[200px] h-[150px] object-cover rounded-lg" />
-            </div>
-          </div>
-
-
+          {
+            !show ? <></> :
+              <div className="flex flex-col gap-4 my-4">
+                {[1, 1, 1, 1, 1, 1].map(item => (
+                  <MenuItem data={null} />
+                ))}
+              </div>
+          }
         </div>
-
-
-
 
 
       </div>
