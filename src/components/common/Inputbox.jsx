@@ -2,7 +2,7 @@ import React from "react";
 
 const InputBox = ({ errormsg, label, name, value, type, onChange, styles }) => {
   return (
-    <div class="relative  w-full">
+    <div className="relative  w-full">
       <input
         type={type ?? "text"}
         name={name}
