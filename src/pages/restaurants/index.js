@@ -93,7 +93,7 @@ const Home = () => {
               popularRestaurants.map((item) => (
                 <Link
                   href={{
-                    pathname: '/home/view/' + item.name,
+                    pathname: '/restaurants/view/' + item.name,
                     query: {
                       id: item.id,
                       name: item.name,

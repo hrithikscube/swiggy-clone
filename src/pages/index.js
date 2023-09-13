@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './home'
+import Landing from '@/components/Landing'
 
 const index = () => {
   return (
     <div className='overflow-hidden'>
-      <Home />
+      <Landing />
     </div>
   )
 }
