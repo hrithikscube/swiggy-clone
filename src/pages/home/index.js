@@ -7,8 +7,7 @@ import Header from '@/components/common/Header'
 import SubHeading from '@/components/common/SubHeading'
 import { popularRestaurants } from '@/utils/helpers'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const FilterCta = (props) => {
   return (
