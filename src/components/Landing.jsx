@@ -7,6 +7,8 @@ const Landing = () => {
 
   const router = useRouter()
 
+  
+
   return (
     <Fragment>
       <div className="w-full flex flex-col">
@@ -61,7 +63,7 @@ const Landing = () => {
                 </button>
 
                 <div className="absolute right-0">
-                  <CtaButton  onClick={()=>router.push('/restaurants')}>Find Food</CtaButton>
+                  <CtaButton onClick={() => router.push('/restaurants')}>Find Food</CtaButton>
                 </div>
               </div>
 
@@ -72,7 +74,7 @@ const Landing = () => {
                 />
               </div>
               <div className='w-[150px] lg:hidden block'>
-                <CtaButton onClick={()=>router.push('/restaurants')}>
+                <CtaButton onClick={() => router.push('/restaurants')}>
                   Find Food
                 </CtaButton>
               </div>
