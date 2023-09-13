@@ -5,12 +5,16 @@ import { useRouter } from 'next/router'
 
 const menuItems = [
     {
+        name: 'Dashboard',
+        link: '/dashboard'
+    },
+    {
         name: 'Owners',
         link: '/dashboard/owners'
     },
     {
-        name: 'Dashboard',
-        link: '/dashboard'
+        name: 'Orders',
+        link: '/dashboard/orders'
     },
     {
         name: 'Restaurants',
