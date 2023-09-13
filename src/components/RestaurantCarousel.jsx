@@ -65,9 +65,9 @@ const RestaurantCarousel = () => {
       {React.Children.toArray(
         popularRestaurants.map((item) => (
           <Link
-            // href={'/home/view/' + item.name}
+            // href={'/restaurants/view/' + item.name}
             href={{
-              pathname: '/home/view/' + item.name,
+              pathname: '/restaurants/view/' + item.name,
               query: {
                 id: item.id,
                 name: item.name,

@@ -1,8 +1,12 @@
 import React, { Fragment } from 'react'
 import CtaButton from './common/CtaButton'
 import Footer from './common/Footer'
+import { useRouter } from 'next/router'
 
 const Landing = () => {
+
+  const router = useRouter()
+
   return (
     <Fragment>
       <div className="w-full flex flex-col">
@@ -57,7 +61,7 @@ const Landing = () => {
                 </button>
 
                 <div className="absolute right-0">
-                  <CtaButton>Find Food</CtaButton>
+                  <CtaButton  onClick={()=>router.push('/restaurants')}>Find Food</CtaButton>
                 </div>
               </div>
 
@@ -68,7 +72,7 @@ const Landing = () => {
                 />
               </div>
               <div className='w-[150px] lg:hidden block'>
-                <CtaButton>
+                <CtaButton onClick={()=>router.push('/restaurants')}>
                   Find Food
                 </CtaButton>
               </div>

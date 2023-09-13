@@ -124,13 +124,13 @@ const ViewRestaurant = () => {
 
   const crumbs = [
     {
-      name: 'Home /',
-      link: '/',
+      name: 'Restaurants /',
+      link: '/restaurants',
     },
 
     {
       name: 'Bangalore /',
-      link: '/',
+      link: '#',
     },
 
     {

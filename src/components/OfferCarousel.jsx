@@ -64,7 +64,7 @@ const OfferCarousel = () => {
     >
       {React.Children.toArray(
         offerCardItems.map((item) => (
-          <Link href={'/home/view/' + item.name}>
+          <Link href={'/restaurants/view/' + item.name}>
             <div className="mr-7 cursor-pointer">
               <img src={item.image} alt="banner_card" />
             </div>
