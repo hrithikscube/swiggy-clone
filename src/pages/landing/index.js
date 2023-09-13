@@ -1,5 +1,5 @@
-import Landing from '@/components/Landing'
 import React from 'react'
+import Landing from '@/components/Landing'
 
 const IntroScreen = () => {
   return <Landing />
