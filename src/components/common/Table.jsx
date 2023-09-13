@@ -6,31 +6,30 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import React from 'react'
-import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(() => ({
-    root: {
-        '& td ': {
-            color: '#141C4C',
-            fontFamily: "Poppins",
-        },
-    },
+// const useStyles = makeStyles(() => ({
+//     root: {
+//         '& td ': {
+//             color: '#141C4C',
+//             fontFamily: "Poppins",
+//         },
+//     },
 
-    tr: {
-        '& td:first-child ': {
-            borderTopLeftRadius: '8px',
-            borderBottomLeftRadius: '8px',
-        },
-        '& td:last-child ': {
-            borderTopRightRadius: '8px',
-            borderBottomRightRadius: '8px',
-        },
-    },
-}));
+//     tr: {
+//         '& td:first-child ': {
+//             borderTopLeftRadius: '8px',
+//             borderBottomLeftRadius: '8px',
+//         },
+//         '& td:last-child ': {
+//             borderTopRightRadius: '8px',
+//             borderBottomRightRadius: '8px',
+//         },
+//     },
+// }));
 
 
 const CommonTable = ({ data, cols }) => {
-    const classes = useStyles();
+    // const classes = useStyles();
     const width = typeof window !== 'undefined' ? window.innerWidth : null
 
     return (
@@ -54,7 +53,14 @@ const CommonTable = ({ data, cols }) => {
                         padding: 0,
                     },
                 }}
-                className={classes.root}
+                className={{
+                    root: {
+                        '& td ': {
+                            color: '#141C4C',
+                            fontFamily: "Poppins",
+                        },
+                    }
+                }}
                 aria-label='simple table'
             >
                 <TableHead>
@@ -71,7 +77,18 @@ const CommonTable = ({ data, cols }) => {
                         <TableRow
                             // key={uuid()}
                             sx={{ height: '16px', backgroundColor: '#F1F4F8', color: '#141C4C' }}
-                            className={classes.tr}
+                            className={{
+                                tr: {
+                                    '& td:first-child ': {
+                                        borderTopLeftRadius: '8px',
+                                        borderBottomLeftRadius: '8px',
+                                    },
+                                    '& td:last-child ': {
+                                        borderTopRightRadius: '8px',
+                                        borderBottomRightRadius: '8px',
+                                    },
+                                },
+                            }}
                         >
                             {React.Children.toArray(cols.map((col) => (
                                 <TableCell
