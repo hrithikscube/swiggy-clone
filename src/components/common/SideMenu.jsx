@@ -34,13 +34,14 @@ const inActiveStyle = 'text-footerDark hover:text-swiggyOrange'
 const SideMenu = () => {
     const { route } = useRouter()
     return (
-        <div className='w-2/12 py-5 bg-none h-screen border-r'>
+        <div className='lg:w-2/12 w-full py-5 bg-none lg:h-screen lg:border-r flex lg:flex-col flex-row items-start lg:justify-normal justify-between'>
+
             <div className='px-5'>
                 <Logo />
             </div>
 
-            <div className='w-full'>
-                <div className='mt-5 w-full flex flex-col'>
+            <div className='w-full lg:block hidden'>
+                <div className='mt-5 w-full lg:gap-0 gap-5'>
                     <hr className='bg-gray-400 border-t' />
                     {
                         React.Children.toArray(menuItems.map((item) => (
@@ -53,6 +54,15 @@ const SideMenu = () => {
                     }
                 </div>
             </div>
+
+            <div className='absolute right-5 lg:hidden block top-5'>
+                <img src="/icons/burgerMenu.svg" alt="burgerIcon" className='w-7 h-7 cursor-pointer' />
+            </div>
+
+            
+
+                    
+
         </div>
     )
 }
