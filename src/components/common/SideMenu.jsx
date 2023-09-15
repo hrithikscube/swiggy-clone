@@ -9,8 +9,8 @@ const menuItems = [
         link: '/dashboard'
     },
     {
-        name: 'Owners',
-        link: '/dashboard/owners'
+        name: 'Users',
+        link: '/dashboard/users'
     },
     {
         name: 'Orders',

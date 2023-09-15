@@ -1,11 +1,11 @@
 import React from 'react'
-import Owners from '@/components/modules/Owners'
+import Users from '@/components/modules/Users'
 import Dashboard from '@/components/common/Dashboard'
 
 
 const index = () => {
     return (
-        <Dashboard module={<Owners />} />
+        <Dashboard module={<Users />} />
     )
 }
 

@@ -57,8 +57,18 @@ const Restarants = () => {
 
   return (
     <div>
-      <div className='bg-[#f2f2f2] rounded-lg p-4 w-full'>
-        <Title heading="List of Restarants" />
+      <div className='p-4 w-full'>
+
+        <div className='flex items-center justify-between w-full'>
+          <div className='w-full'>
+            <Title heading="List of Restaurants" />
+          </div>
+
+          <div className="my-5 w-full flex items-center justify-end gap-3">
+            <button className='p-2 rounded-lg px-4 text-sm font-poppins'>Filter</button>
+            <button className='p-2 px-5 bg-swiggyOrange rounded text-white font-poppins text-sm'>Create New Restarant</button>
+          </div>
+        </div>
 
         <div className='my-5'>
           <CommonTable cols={cols} data={[1, 1, 1, 1]} />
