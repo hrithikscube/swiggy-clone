@@ -62,7 +62,7 @@ const Landing = () => {
                   </div>
                 </button>
 
-                <div className="absolute right-0">
+                <div className="absolute right-0 animate-pulse">
                   <CtaButton onClick={() => router.push('/restaurants')}>Find Food</CtaButton>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Landing = () => {
                   placeholder="Enter your delivery location"
                 />
               </div>
-              <div className='w-[150px] lg:hidden block'>
+              <div className='w-[150px] lg:hidden block animate-pulse'>
                 <CtaButton onClick={() => router.push('/restaurants')}>
                   Find Food
                 </CtaButton>
