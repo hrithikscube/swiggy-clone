@@ -36,11 +36,14 @@ app.get("/orders/restaurant", authenticate, order.getOrdersForUserRestaurant);
 app.post("/users", userController.createUser);
 app.post("/login", userController.login);
 
+const PORT = 3001
+
 // Server creation and database connection
-app.listen(3001, async () => {
+app.listen(PORT, async () => {
   try {
     await connect();
     console.log("Connected to MongoDB");
+    console.log(`Server running at port ${PORT}`)
   } catch (err) {
     console.error("Error connecting to MongoDB:", err);
   }
