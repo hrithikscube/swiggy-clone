@@ -12,7 +12,7 @@ const Footer = ({ flag }) => {
         <div className="bg-[#f0f0f5] w-full p-6">
           <div className="grid lg:grid-cols-2 lg:w-[1290px] m-auto">
             <div>
-              <p className="text-footerDark font-bold lg:text-3xl text-xl">
+              <p className="text-footerDark font-semibold lg:text-3xl text-xl">
                 For better experience, download{' '}
                 <br className="lg:block hidden" /> the swiggy app now
               </p>
@@ -23,16 +23,16 @@ const Footer = ({ flag }) => {
                 className="cursor-pointer"
                 src="/images/play_store.png"
                 alt="playstore"
-                width={220}
-                height={100}
+                width={200}
+                height={70}
               />
 
               <Image
                 className="cursor-pointer"
                 src="/images/app_store.png"
                 alt="app_store"
-                width={220}
-                height={100}
+                width={200}
+                height={70}
               />
             </div>
           </div>
@@ -51,25 +51,25 @@ const Footer = ({ flag }) => {
                 width={21}
                 height={32}
               />
-              <p className="font-poppins font-medium text-white lg:text-2xl text-xl">
+              <p className="font-poppins font-semibold text-white lg:text-2xl text-xl">
                 Swiggy
               </p>
             </div>
 
-            <p className="font-poppins text-gray-400 text-base capitaliza mt-2">
+            <p className="font-poppins text-gray-400 lg:text-base text-sm capitaliza mt-2">
               &copy; 2023 Bundl Technologies Pvt. Ltd
             </p>
           </div>
 
           {/* Company Links */}
           <div className="flex flex-col gap-4">
-            <h1 className="font-medium text-white font-poppins lg:text-xl text-lg">
+            <h1 className="font-medium text-white font-poppins lg:text-lg text-base">
               Company
             </h1>
 
             {React.Children.toArray(
               companyItems.map((item) => (
-                <p className="cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins">
+                <p className="cursor-pointer capitalize text-sm text-gray-400 font-thin font-poppins">
                   {item.name}
                 </p>
               )),
@@ -79,13 +79,13 @@ const Footer = ({ flag }) => {
           {/* Contact us & Legal */}
           <div>
             <div className="flex flex-col gap-4">
-              <h1 className="font-medium text-white font-poppins lg:text-xl text-lg">
+              <h1 className="font-medium text-white font-poppins lg:text-lg text-base">
                 Contact us
               </h1>
 
               {React.Children.toArray(
                 contactItems.map((item) => (
-                  <p className="cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins">
+                  <p className="cursor-pointer capitalize text-sm text-gray-400 font-thin font-poppins">
                     {item.name}
                   </p>
                 )),
@@ -95,13 +95,13 @@ const Footer = ({ flag }) => {
             <br />
 
             <div className="flex flex-col gap-4">
-              <h1 className="font-medium text-white font-poppins lg:text-xl text-lg">
+              <h1 className="font-medium text-white font-poppins lg:text-lg text-base">
                 Legal
               </h1>
 
               {React.Children.toArray(
                 legalItems.map((item) => (
-                  <p className="cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins">
+                  <p className="cursor-pointer capitalize text-sm text-gray-400 font-thin font-poppins">
                     {item.name}
                   </p>
                 )),
@@ -111,13 +111,13 @@ const Footer = ({ flag }) => {
 
           {/* We deliver to */}
           <div className="flex flex-col gap-4">
-            <h1 className="font-medium text-white font-poppins lg:text-xl text-lg">
+            <h1 className="font-medium text-white font-poppins lg:text-lg text-base">
               We deliver to
             </h1>
 
             {React.Children.toArray(
               cities.map((item) => (
-                <p className="cursor-pointer capitalize text-base text-gray-400 font-thin font-poppins">
+                <p className="cursor-pointer capitalize text-sm text-gray-400 font-thin font-poppins">
                   {item.name}
                 </p>
               )),

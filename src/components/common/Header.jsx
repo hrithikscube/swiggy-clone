@@ -262,17 +262,17 @@ const Header = () => {
     {
       name: 'search',
       link: '#',
-      onClick: () => {},
+      onClick: () => { },
     },
     {
       name: 'offers',
       link: '#',
-      onClick: () => {},
+      onClick: () => { },
     },
     {
       name: 'help',
       link: '#',
-      onClick: () => {},
+      onClick: () => { },
     },
     {
       name: 'sign in',
@@ -282,7 +282,7 @@ const Header = () => {
     {
       name: 'cart',
       link: '/cart',
-      onClick: () => {},
+      onClick: () => { },
     },
   ]
 
@@ -324,10 +324,10 @@ const Header = () => {
               onClick={locationDrawerOpen}
               className="lg:flex hidden flex-row items-start gap-2 group cursor-pointer"
             >
-              <p className="text-sm group-hover:text-swiggyOrange text-footerDark font-poppins font-medium tracking-wide border-b-2 border-footerDark group-hover:border-swiggyOrange">
+              <p className="text-base group-hover:text-swiggyOrange text-footerDark font-poppins font-medium tracking-wide border-b-2 border-footerDark group-hover:border-swiggyOrange">
                 Whitefield
               </p>
-              <p className="font-poppins text-sm text-[#808080] group-hover:opacity-50 font-medium tracking-wide">
+              <p className="font-poppins text-base text-[#808080] group-hover:opacity-50 font-medium tracking-wide">
                 Bengaluru, Karnataka, India
               </p>
             </div>
@@ -341,7 +341,7 @@ const Header = () => {
                 <Link href={item.link}>
                   <p
                     onClick={item.onClick}
-                    className="capitalize cursor-pointer text-footerDark opacity-80 hover:opacity-100 hover:text-swiggyOrange font-poppins font-medium text-base tracking-wide"
+                    className="capitalize cursor-pointer text-base font-medium text-footerDark opacity-80 hover:opacity-100 hover:text-swiggyOrange font-poppins"
                   >
                     {item.name}
                   </p>

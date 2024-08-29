@@ -5,7 +5,6 @@ import Logo from '../common/Logo'
 import Link from 'next/link'
 
 
-// Import React FilePond
 import { FilePond, File, registerPlugin } from 'react-filepond'
 // Import FilePond styles
 import 'filepond/dist/filepond.min.css'

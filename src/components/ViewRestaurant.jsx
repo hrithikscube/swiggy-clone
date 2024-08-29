@@ -10,9 +10,8 @@ const Breadcrumb = ({ crumbs }) => {
         crumbs.map((item, index) => (
           <Link href={item.link}>
             <p
-              className={`text-xs font-poppins font-medium ${
-                index === 2 ? 'text-footerDark' : 'text-[#909090]'
-              }`}
+              className={`text-xs font-poppins font-medium ${index === 2 ? 'text-footerDark' : 'text-[#909090]'
+                }`}
             >
               {item.name}
             </p>
@@ -183,22 +182,22 @@ const ViewRestaurant = () => {
         <div className="my-5 flex items-center gap-5">
           <div className="flex items-center gap-2 opacity-70">
             <img src="/icons/clock.svg" alt="clockIcon" className="w-6 h-6" />
-            <p className="text-base font-poppins font-bold text-footerDark">
+            <p className="text-base font-poppins font-semibold text-footerDark">
               30 mins
             </p>
           </div>
 
           <div className="flex items-center gap-2 opacity-70">
             <img src="/icons/rupee.svg" alt="rupeeIcon" className="w-6 h-6" />
-            <p className="text-base font-poppins font-bold text-footerDark">
+            <p className="text-base font-poppins font-semibold text-footerDark">
               500 for two
             </p>
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col items-start lg:items-center gap-4 lg:gap-5">
+        {/* <div className="flex lg:flex-row flex-col items-start lg:items-center gap-4 lg:gap-5">
           {React.Children.toArray([1, 1, 1].map((item) => <OfferCard />))}
-        </div>
+        </div> */}
 
         {/* Food Category and items available in restaurant */}
 
